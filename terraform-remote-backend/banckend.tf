@@ -1,9 +1,9 @@
 terraform {
   backend "s3" {
-    bucket = "week6-celawo-bucket-terraform"
+    bucket = ""
     key    = "dev/terrafform.tfstate"
     region = "us-east-1"
-    dynamodb_table = "week6-terraform-lock"
+    dynamodb_table = ""
     encrypt = true
     user_data = file("setup.sh")
   }
